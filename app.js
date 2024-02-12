@@ -6,9 +6,9 @@ const cors = require('cors')
 const app = express()
 const port = 5002
 
-const email = 'Ashitosh07@outlook.com'
-const myemail = 'kambleashitosh07@gmail.com'
-const mypassword = 'osvr sxea qazq bcgj'
+const email = ''
+const myemail = ''
+const mypassword = ''
 
 app.use(cors())
 app.use(express.json({ limit: '50mb' }))
@@ -51,7 +51,7 @@ function sendEmail(toEmail, title, description, file, isBuyer, donationAmount) {
   })
 }
 
-const clientEmail = 'ashitosh.k008@gmail.com' // Replace with the actual client's email address
+const clientEmail = '' // Replace with the actual client's email address
 
 app.post('/sendEmail', async (req, res) => {
   const { buyerEmail, title, description, file, donationAmount } = req.body
